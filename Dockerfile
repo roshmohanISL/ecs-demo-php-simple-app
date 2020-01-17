@@ -1,4 +1,6 @@
-FROM mcr.microsoft.com/windows/servercore/iis AS php71
+FROM mcr.microsoft.com/windows/servercore:ltsc2016 AS php71
+
+#FROM mcr.microsoft.com/windows/servercore/iis AS php71
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';"]
 
